@@ -3,7 +3,7 @@
 Inputs:
 - Assignment mark (out of 100).
 - Midterm mark (out of 100).
-- Final exam mark (out of 100).
+- Final exam mark (out of 100). 
 Outputs:
 - Course total (2 decimal place).
 - Pass or Fail.
