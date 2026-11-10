@@ -5,6 +5,7 @@
 
     int main(){
         double ass, mid, finalExam;
+        const double ASS_W = 0.20, MID_W = 0.30, FINAL_W = 0.50;
         const double pass_mark = 50 ;
 
         
@@ -17,7 +18,7 @@
         cout << "Enter your final exam results: ";
         cin >> finalExam;
         
-        double total = (ass * 0.20) + (mid*0.30) + (finalExam*0.50) ;
+        double total = ass * ASS_W + mid * MID_W + finalExam * FINAL_W;
     
         string res = total >= pass_mark ? "Pass" : "Fail" ;
         
