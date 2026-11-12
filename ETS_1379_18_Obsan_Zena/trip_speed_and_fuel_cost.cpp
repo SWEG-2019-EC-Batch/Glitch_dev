@@ -33,20 +33,27 @@ Process
 using namespace std;
 int main(){
     double distance, hours, minutes, car_fuel_use_per_hundred_km, fuel_price_per_litre, average_speed, fuel_used, fuel_cost;
+    
     cout<<"enter distance travelled: ";
     cin>>distance;
+    
     cout<<"enter time of travel in hours and minutes separated by space: ";
     cin>>hours>>minutes;
+    
     cout<<"enter car fuel use per hundred kilometers: ";
     cin>>car_fuel_use_per_hundred_km;
+    
     cout<<"enter fuel price per litre: ";
     cin>>fuel_price_per_litre;
+    
     fuel_used=car_fuel_use_per_hundred_km*(distance/100);
     average_speed=distance/(hours+(minutes/60));
     fuel_cost=fuel_price_per_litre*fuel_used;
+    
     cout<<fixed<<setprecision(2);
     cout<<"total fuel used is: "<<fuel_used<<" litres"<<endl;
     cout<<"average speed is: "<<average_speed<<" km/hr"<<endl;
     cout<<"total fuel cost is: "<<fuel_cost<<" birr"<<endl;
+    
     return 0;
 }
