@@ -31,15 +31,21 @@ B. Process
 using namespace std;
 int main(){
     double assignment, midterm, final, total;
-    cout<<"enter assignment out of 100%: ";
-    cin>>assignment;
-    cout<<"enter midterm out of 100%: "; 
-    cin>>midterm;
-    cout<<"enter final out of 100%: ";
-    cin>>final;
-    total=(assignment*0.2)+(midterm*0.3)+(final*0.5);
-    cout<<fixed<<setprecision(1);
-    cout<<"your total mark is: "<<total<<endl;
-    total>=50?cout<<" you have passed":cout<<"you have failed";
+   
+    cout <<"enter assignment out of 100%: ";
+    cin >>assignment;
+   
+    cout <<"enter midterm out of 100%: "; 
+    cin >>midterm;
+   
+    cout <<"enter final out of 100%: ";
+    cin >>final;
+   
+    total = (assignment*0.2)+(midterm*0.3)+(final*0.5);
+   
+    cout << fixed<<setprecision(1);
+    cout <<"your total mark is: "<<total<<endl;
+   
+    total >= 50 ? cout << " you have passed" : cout <<"you have failed";
     return 0;
 }
