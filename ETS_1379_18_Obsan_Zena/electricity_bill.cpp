@@ -26,15 +26,12 @@ B. Process
 using namespace std;
 int main(){
     double total_bill, energy_charge, electricity_units;
-   
     const double service_charge = 10;
    
     cout <<enter electicity_units: ";
-       
     cin >>electricity_units;
    
     electricity_units <= 50? energy_charge=electricity_units*1.5 : energy_charge = (50*1.5) + (electricity_units-50)*2;
-   
     total_bill = service_charge+energy_charge;
    
     cout<<fixed << setprecision(2);
