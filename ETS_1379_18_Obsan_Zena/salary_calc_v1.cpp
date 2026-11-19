@@ -49,7 +49,7 @@ int main()
     else if (work_hrs_per_week < base_work_hr_per_week) {
         cout << "enter deduction rate in birr: ";
         cin >> deduction_rate;
-        penalty = (base_salary/40) * deduction_rate;
+        penalty = (base_salary / 40) * (40 - work_hrs_per_week);
         gross_salary = base_salary - penalty;
     }
 
